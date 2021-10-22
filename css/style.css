@@ -29,23 +29,24 @@ header{
     color: #50C7C7;
 }
 
-.pricing, .card {
-    display: flex;
-    flex-direction: column; 
-    align-self: center;
-    justify-content: center;
-}
-
-.card{
-    width: 450px;
-}
-
 .card > header {
     background: #288080;
     border: 2px solid #45ADAD;
-    padding: 20px 0;
+    padding: 20px 0px; 
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
+}
+
+.pricing{
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.card{
+    flex-basis: 450px;
+    align-self: center;
 }
 
 .gallery{
@@ -61,7 +62,26 @@ header{
     width: 300px;
 } 
 
-@keyframes .logo{
-    0% {opacity: 0; width: 50px}
-    100% {opacity: 1; width: 425px;}
+ @keyframes logo{
+    from {
+        opacity: 0; 
+        width: 50px
+    }
+
+    to {
+        opacity: 1; 
+        width: 425px;
+    }
+} 
+
+/* 850px or larger view */
+@media only screen and (min-width: 850px){
+    header, .nav_links{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    header:first {
+        
+    }
 }
