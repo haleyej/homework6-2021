@@ -1,1 +1,67 @@
 /* My stylesheet! */
+
+body{
+    font-family: 'Alegreya Sans SC', serif;
+    background-image: url(../images/concrete_seamless.png);
+    background-color: #f1f1f1;
+}
+
+header{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links{
+    display: flex;
+    flex-flow: column nowrap; 
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.nav_item a:visited{
+    color: blue;
+    /* ????? */
+}
+
+.nav_item a:visited:hover{
+    color: #50C7C7;
+}
+
+.pricing, .card {
+    display: flex;
+    flex-direction: column; 
+    align-self: center;
+    justify-content: center;
+}
+
+.card{
+    width: 450px;
+}
+
+.card > header {
+    background: #288080;
+    border: 2px solid #45ADAD;
+    padding: 20px 0;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+ #image1, #image2, #image3, #image4, #image5{
+    border: 10px solid #50c7c7;
+    margin: 10px; 
+    width: 300px;
+} 
+
+@keyframes .logo{
+    0% {opacity: 0; width: 50px}
+    100% {opacity: 1; width: 425px;}
+}
