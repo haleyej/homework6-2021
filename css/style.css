@@ -81,8 +81,10 @@ header{
         justify-content: space-between;
     }
 
-    header:first {
+    body > header {
         /* challenge problem with hheader idkkk */
+        position: sticky; 
+        /* width: 100%; */
     }
 
     .card{
@@ -98,7 +100,8 @@ header{
 
 @media print{
     body{
-      background-image: none;
+      background-image: url();
+      background-color: #f1f1f1;
     }
 
     .nav_links{
@@ -121,15 +124,9 @@ header{
         display: none;
     }
 
-    .card > ul > li:nth-child(even)::after {
-        content: "👍";
-        display: inline-block;
-        /* margin-left: -5px;
-        width:5px; */
-    }
-
-    .card > ul > li:nth-child(odd)::before{
+    .card > ul > li:nth-child(even)::after, 
+    .card > ul > li:nth-child(odd)::before {
         content: "👍";
         display: inline-block;
     }
-  }
+}
