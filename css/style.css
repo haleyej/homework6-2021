@@ -82,6 +82,54 @@ header{
     }
 
     header:first {
-        
+        /* challenge problem with hheader idkkk */
+    }
+
+    .card{
+        flex-basis: 250px;
     }
 }
+
+/* Prefers reduced motion */
+
+@media (prefers-reduced-motion){
+    /* logo animation stuff */
+}
+
+@media print{
+    body{
+      background-image: none;
+    }
+
+    .nav_links{
+        flex-flow: row;
+        align-items: flex-end; 
+      
+    }
+
+  .pricing{
+        flex-wrap: nowrap;
+    } 
+
+    .card{
+        flex-basis: 250px;
+        border: 2px solid #45ADDD;
+        align-self: flex-end;
+    }
+
+    #gallery, .gallery{
+        display: none;
+    }
+
+    .card > ul > li:nth-child(even)::after {
+        content: "👍";
+        display: inline-block;
+        /* margin-left: -5px;
+        width:5px; */
+    }
+
+    .card > ul > li:nth-child(odd)::before{
+        content: "👍";
+        display: inline-block;
+    }
+  }
