@@ -89,8 +89,9 @@ header{
     }
 
     body > header {
-        /* challenge problem with hheader idkkk */
+        /* challenge problem with header idkkk */
         position: sticky; 
+        top: 0px;
     }
 
     .card{
