@@ -91,7 +91,7 @@ header{
     body > header {
         /* challenge problem with header idkkk */
         position: sticky; 
-        bottom: 0;
+        top: 0px;
     }
 
     .card{
